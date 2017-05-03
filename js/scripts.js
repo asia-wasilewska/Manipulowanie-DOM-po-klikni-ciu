@@ -2,7 +2,7 @@ var list = document.getElementById('list');
 var add = document.getElementById('addElem');
 
 add.addEventListener('click', function() {
-  var listNumber = document.getElementsByTagName('li').length;
-  list.innerHTML += '<li>item ' + listNumber + '</li>';
-});
-
+  var listId = document.getElementById('list'),
+      liElem = document.getElementsByTagName('li').length;
+  list.innerHTML += '<li>item '+ liElem + '</li>'
+ });
